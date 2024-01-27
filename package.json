@@ -1,7 +1,6 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://priyanshum2003.github.io/vignam",
   "private": true,
   "dependencies": {
     "@excalidraw/excalidraw": "^0.17.2",
