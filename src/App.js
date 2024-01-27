@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Siderbar from "./components/siderbar";
+import Home from "./pages/home";
+import { RxAvatar } from "react-icons/rx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="md:hidden flex bg-gray-200 p-4 w-[89%] items-center hover:text-blue-700 space-x-4 text-gray-600">
+        <RxAvatar className="text-2xl" />
+        <span>School</span>
+      </div>
+      <div className="flex">
+        <Siderbar />
+        <Home />
+      </div>
+    </>
   );
 }
 
